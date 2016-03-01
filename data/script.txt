@@ -1,0 +1,12 @@
+:Cage
+You wake up in a cold, metal cage. Near you is a bunch of bananas.
+
+Choice:
+* Eat banana
+  Continue
+
+* Go to sleep
+  You go to sleep.
+  -> Cage
+
+You eat the banana.

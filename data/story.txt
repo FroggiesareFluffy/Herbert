@@ -1,0 +1,18 @@
+Main storyline:
+
+Herbert the flying monkey is the byproduct of a nuclear war that destroyed all humans.
+At least, most of them.
+After the war is over, Herbert is captured by the survivors and put in a cage. He must use every available resource to
+escape back to his jungle.
+
+Walkthrough:
+    Cage:
+        Fly to knock down banana.
+        Pick up banana.
+        Eat banana.
+        Throw banana peel out of cage.
+        Catch keys.
+        Use keys to unlock door.
+        Leave cage.
+        Walk out of area.
+    Street:
