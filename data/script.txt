@@ -1,12 +1,30 @@
 :Cage
 You wake up in a cold, metal cage. Near you is a bunch of bananas.
 
-Choice:
+<choice>
 * Eat banana
   Continue
 
 * Go to sleep
   You go to sleep.
-  -> Cage
+  <wait>
+  <goto> Cage
 
 You eat the banana.
+Now you have a banana peel.
+
+Choice:
+* Throw banana peel away.
+
+- Eat banana peel.
+  No way! Banana peels are disgusting!
+
+You throw the banana peel between the bars of the cage.
+...
+A human walks by and slips on the peel.
+He throws several small metal objects on a ring into the air.
+
+Choice:
+* Catch them
+
+- Watch them drop

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE story [
+        <!ELEMENT start-screen (#PCDATA)>
+        <!ELEMENT story (start-screen|intro|scene)*>
+        <!ELEMENT intro (#PCDATA)>
+        <!ELEMENT scene (line|choice|wait|goto)*>
+        <!ATTLIST scene
+                name CDATA #REQUIRED
+                first CDATA #REQUIRED>
+        <!ELEMENT line (#PCDATA)>
+        <!ELEMENT choice (option)*>
+        <!ELEMENT option (continue|wait|goto|line)*>
+        <!ATTLIST option
+                text CDATA #REQUIRED>
+        <!ELEMENT continue (#PCDATA)>
+        <!ELEMENT wait (#PCDATA)>
+        <!ELEMENT goto (#PCDATA)>
+        <!ATTLIST goto
+                scene CDATA #REQUIRED>
+        ]>
+<story>
+    <start-screen>
+        Welcome to the Amazing Adventures of
+        Herbert the Flying Monkey!
+    </start-screen>
+    <intro>
+    </intro>
+    <scene name="Cage" first="1">
+        <line>You wake up in a small metal cage. Near you is a bunch of bananas.</line>
+        <choice>
+            <option text="Eat a banana">
+                <continue/>
+            </option>
+            <option text="Go back to sleep">
+                <line>You go back to sleep.</line>
+                <wait/>
+                <goto scene="Cage"/>
+            </option>
+        </choice>
+        <line>You ate a banana.</line>
+        <line>Now you have a banana peel.</line>
+        <choice>
+            <option text="Eat the banana peel">
+                <line>No way! Banana peels are disgusting!</line>
+            </option>
+            <option text="Throw away the banana peel">
+                <continue/>
+            </option>
+        </choice>
+        <line>You throw the banana peel between the bars of the cage.</line>
+        <wait/>
+        <line>A human walks by and slips on the peel.</line>
+        <line>Several small metal objects on a ring fly into the air.</line>
+        <choice>
+            <option text="Catch them">
+                <continue/>
+            </option>
+            <option text="Watch them drop">
+                <line>You watch the metal things drop.</line>
+                <line>The human picks them up and walks away.</line>
+                <line>You decide to go to sleep.</line>
+                <goto scene="Cage"/>
+            </option>
+        </choice>
+        <line>You catch the small metal objects.</line>
+        <choice>
+            <option text="Open the cage">
+                <line>You bash the side of the cage with the small metal objects.</line>
+                <line>The cage breaks.</line>
+                <continue/>
+            </option>
+            <option text="Eat them">
+                <line>You try to swallow them, but they poke your throat.</line>
+            </option>
+        </choice>
+        <line>You walk out of the cage.</line>
+        <line>There is an opening to your right.</line>
+        <line>You can see trees through it.</line>
+        <line>You run towards them.</line>
+        <goto scene="Finish"/>
+    </scene>
+    <scene name="Finish" first="0">
+        <line>You made it back to your home!</line>
+        <line>You Win!</line>
+    </scene>
+</story>
